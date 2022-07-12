@@ -8,7 +8,8 @@
     "testhead": "npm run test -- --headed",
     "testchomre": "npm run test -- --browser chrome",
     "recordDashboardTest": "npm run test -- --record --key 7ddb91b2-6523-4ed7-ae5d-cf310ea80606 --reporter mochawesome",
-    "grrenkartTest": "npm run test -- --spec \"cypress/integration/greenkart/*\""
+    "grrenkartTest": "npm run test -- --spec \"cypress/integration/greenkart/*\"",
+    "build": "webpack --config webpack.config.js"
   },
   "author": "suriya",
   "license": "ISC",
