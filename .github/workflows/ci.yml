@@ -12,12 +12,7 @@ jobs:
       - name: Save build folder
         uses: cypress-io/github-action@v4.1.0
         with:
-          # build: npm run build
-            start: npm start
-      # - name: Cypress install
-      #   uses: cypress-io/github-action@v4
-      #   with:
-      #     runTests: false
-      #     build: yarn build    
+          build: npm run build
+          start: npm start  
       - run: npm run recordDashboardTest
       - run: npm run testchomre
