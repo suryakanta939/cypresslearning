@@ -9,7 +9,7 @@
     "testchomre": "npm run test -- --browser chrome",
     "recordDashboardTest": "npm run test -- --record --key 7ddb91b2-6523-4ed7-ae5d-cf310ea80606 --reporter mochawesome",
     "grrenkartTest": "npm run test -- --spec \"cypress/integration/greenkart/*\"",
-    "build": "npm --config cypress.config.js"
+    
   },
   "author": "suriya",
   "license": "ISC",
