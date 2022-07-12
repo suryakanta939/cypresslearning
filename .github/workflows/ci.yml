@@ -9,10 +9,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cypress.io 🧪
+      - name: Cypress.io
         uses: cypress-io/github-action@v2
         with:
           # build: npm run build
-          start: npm start
+          # start: npm start
       - run: npm run recordDashboardTest
       - run: npm run testchomre
