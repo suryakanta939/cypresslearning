@@ -11,12 +11,12 @@ jobs:
 
       - name: cypress run
         uses: cypress-io/github-action@v4.1.0
-      - name: Install cypress and verify
-        run: 
-          npm ci
-          $(npm bin)/cypress verify
+      # - name: Install cypress and verify
+      #   run: 
+      #     npm ci
+      #     $(npm bin)/cypress verify
       - name: run cypress test
-        run: npm run testchomre
+        run:  npm run testchomre
          
         # with:
         #   start: npm start  
