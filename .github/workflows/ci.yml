@@ -9,10 +9,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cypress.io
+      - name: Save build folder
         uses: cypress-io/github-action@v2
         with:
           # build: npm run build
           # start: npm start
+          name: build
+          if-no-files-found: error
+          path: build
+      - name: Cypress install
+        uses: cypress-io/github-action@v4
+        with:
+          runTests: false
+          build: yarn build    
       - run: npm run recordDashboardTest
       - run: npm run testchomre
