@@ -1,0 +1,23 @@
+{
+  "name": "learingcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "testhead": "npm run test -- --headed",
+    "testchomre": "npm run test -- --browser chrome",
+    "recordDashboardTest": "npm run test -- --record --key 7ddb91b2-6523-4ed7-ae5d-cf310ea80606 --reporter mochawesome",
+    "grrenkartTest": "npm run test -- --spec \"cypress/integration/greenkart/*\""
+  },
+  "author": "suriya",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1"
+  }
+}
